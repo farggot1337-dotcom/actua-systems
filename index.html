@@ -55,7 +55,7 @@
                     </div>
                     <h3>Промышленные Актуаторы</h3>
                     <p>На сервоприводах 750 Вт для максимальной производительности</p>
-                    <a href="#actuators" class="btn-learn">УЗНАТЬ БОЛЬШЕ</a>
+                    <a href="#" class="btn-learn open-product" data-product="actuators">УЗНАТЬ БОЛЬШЕ</a>
                 </div>
                 <div class="product-card">
                     <div class="product-image">
@@ -63,7 +63,7 @@
                     </div>
                     <h3>Активные Ремни</h3>
                     <p>Максимальная реалистичность ощущений</p>
-                    <a href="#belts" class="btn-learn">УЗНАТЬ БОЛЬШЕ</a>
+                    <a href="#" class="btn-learn open-product" data-product="belts">УЗНАТЬ БОЛЬШЕ</a>
                 </div>
                 <div class="product-card">
                     <div class="product-image">
@@ -71,7 +71,7 @@
                     </div>
                     <h3>Кокпиты</h3>
                     <p>Профессиональные решения для симуляторов</p>
-                    <a href="#cockpits" class="btn-learn">УЗНАТЬ БОЛЬШЕ</a>
+                    <a href="#" class="btn-learn open-product" data-product="cockpits">УЗНАТЬ БОЛЬШЕ</a>
                 </div>
             </div>
         </div>
@@ -100,57 +100,6 @@
                     <div class="feature-icon">🎯</div>
                     <h4>Точность</h4>
                     <p>Профессиональная точность</p>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Actuators Section -->
-    <section id="actuators" class="product-section">
-        <div class="container">
-            <div class="product-showcase">
-                <div class="product-content">
-                    <h2>ПРОМЫШЛЕННЫЕ АКТУАТОРЫ</h2>
-                    <h3>Сервоприводы 750 Вт</h3>
-                    <p>Профессиональные актуаторы на промышленных сервоприводах мощностью 750 Вт.<br>Высокая производительность, точность и надежность для гоночных симуляторов.</p>
-                    <a href="#contact" class="btn-learn">УЗНАТЬ БОЛЬШЕ</a>
-                </div>
-                <div class="product-visual">
-                    <div class="placeholder-image large">АКТУАТОРЫ</div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Active Belts Section -->
-    <section id="belts" class="product-section alt">
-        <div class="container">
-            <div class="product-showcase reverse">
-                <div class="product-visual">
-                    <div class="placeholder-image large">АКТИВНЫЕ РЕМНИ</div>
-                </div>
-                <div class="product-content">
-                    <h2>АКТИВНЫЕ РЕМНИ</h2>
-                    <h3>Максимальная реалистичность ощущений</h3>
-                    <p>Почувствуйте каждое ускорение, каждое торможение.<br>Ощутите реалистичность на новом уровне.</p>
-                    <a href="#contact" class="btn-learn">УЗНАТЬ БОЛЬШЕ</a>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Cockpits Section -->
-    <section id="cockpits" class="product-section">
-        <div class="container">
-            <div class="product-showcase">
-                <div class="product-content">
-                    <h2>КОКПИТЫ</h2>
-                    <h3>Профессиональные решения</h3>
-                    <p>Полноценные кокпиты для гоночных и авиационных симуляторов.<br>Готовые решения для профессионалов.</p>
-                    <a href="#contact" class="btn-learn">УЗНАТЬ БОЛЬШЕ</a>
-                </div>
-                <div class="product-visual">
-                    <div class="placeholder-image large">КОКПИТЫ</div>
                 </div>
             </div>
         </div>
@@ -297,14 +246,6 @@
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
-                    <h4>ПРОДУКЦИЯ</h4>
-                    <ul>
-                        <li><a href="#actuators">Актуаторы</a></li>
-                        <li><a href="#belts">Активные ремни</a></li>
-                        <li><a href="#cockpits">Кокпиты</a></li>
-                    </ul>
-                </div>
-                <div class="footer-section">
                     <h4>КОМПАНИЯ</h4>
                     <ul>
                         <li><a href="#about">О нас</a></li>
@@ -315,6 +256,14 @@
                     <h4>КОНТАКТЫ</h4>
                     <p>info@actuasystems.ru</p>
                     <p>+7 (XXX) XXX-XX-XX</p>
+                </div>
+                <div class="footer-section">
+                    <h4>САЙТ</h4>
+                    <ul>
+                        <li><a href="#products">Продукция</a></li>
+                        <li><a href="#cockpit-builder">Конструктор</a></li>
+                        <li><a href="#videos">Видео</a></li>
+                    </ul>
                 </div>
             </div>
             <div class="footer-bottom">
@@ -405,6 +354,24 @@
                         <button class="btn-learn" id="reset-config">СБРОСИТЬ</button>
                     </div>
                 </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Product Details Modal (10 фото + 3 видео) -->
+    <div id="product-modal" class="product-modal">
+        <div class="modal-overlay"></div>
+        <div class="modal-content product-modal-content">
+            <button class="modal-close" id="close-product">&times;</button>
+            <h2 id="product-modal-title">ПРОДУКТ</h2>
+            <p id="product-modal-desc" class="product-modal-desc"></p>
+
+            <div class="product-media">
+                <h3 class="product-media-title">Фотографии</h3>
+                <div id="product-photos" class="product-photos-grid"></div>
+
+                <h3 class="product-media-title">Видео</h3>
+                <div id="product-videos" class="product-videos-grid"></div>
             </div>
         </div>
     </div>
